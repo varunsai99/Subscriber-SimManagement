@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .center {
+      margin: auto;
+      width: 60%;
+      color: rgb(240, 20, 20);
+      padding: 12.5%;
+      margin-left: 30%;
+    }
+    body {
+      background-image: url('login_bg.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .button {
+      background-color: #7FFFD4;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2.5% 2%;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  <div class="center">
+    <h2 >Block Chain Admin Login</h2>
+    <form method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="username"><br>
+      <br>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="password"><br>
+      <br>
+      <label for="utype">Usertype:</label><br>
+      <input type="radio" id="telco-admin" name="usertype" value="telco-admin">
+      <label for="telco-admin">telco-admin</label><br>
+      <input type="radio" id="dealer-admin" name="usertype" value="dealer-admin">
+      <label for="dealer-admin">dealer-admin</label><br> 
+      <br>
+      <input type="submit" class="button" value="Login">
+    </form> 
+
+  </div>
+  <!-- <script>
+    var name1;
+    function ale()
+    {
+      name1 = document.querySelector('#name').value;
+    }
+    
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs') %> 
+<body>
+    <div class="Admin">
+        <h2 >Admin Registration</h2>
+        <form method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="username"><br>
+          <br>
+          <label for="pwd">Password:</label><br>
+          <input type="password" id="pwd" name="password"><br>
+          <br>
+          <label for="utype">Usertype:</label><br>
+          <input type="radio" id="telco-admin" name="usertype" value="telco-admin">
+          <label for="telco-admin">telco-admin</label><br>
+          <input type="radio" id="dealer-admin" name="usertype" value="dealer-admin">
+          <label for="dealer-admin">dealer-admin</label><br> 
+          <br>
+          <input type="submit" class="button" value="Register">
+        </form> 
+        
+    </div>
+</body>
+</html>

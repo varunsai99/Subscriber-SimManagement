@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %> 
+<body>
+    <form action="/user/<%= username %>/services/BuyService" method="POST">
+        <h2>399 pack</h2>
+        <input type="hidden" name="service_name" value="399 pack">
+        <input type="hidden" name="price" value="399">
+        <input type="hidden" name="validity" value="56">
+        <input type="submit" value="Buy">
+    </form>
+    <form action="/user/<%= username %>/services/BuyService" method="POST">
+        <h2>499 pack</h2>
+        <input type="hidden" name="service_name" value="499 pack">
+        <input type="hidden" name="price" value="499">
+        <input type="hidden" name="validity" value="72">
+        <input type="submit" value="Buy">
+    </form>
+    <form action="/user/<%= username %>/services/BuyService" method="POST">
+        <h2>699 pack</h2>
+        <input type="hidden" name="service_name" value="699 pack">
+        <input type="hidden" name="price" value="699">
+        <input type="hidden" name="validity" value="84">
+        <input type="submit" value="Buy">
+    </form>
+</body>
+</html>
